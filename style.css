@@ -1,0 +1,40 @@
+
+/* common style */
+*{
+    font-family: 'Work Sans', sans-serif; ;
+}
+
+
+/* ------------------------
+        FIRST CONTAINER
+--------------------------- */
+.btn{
+    padding: 1.8vw 1.5vw;
+    color:white;
+    border: 0;
+    border-radius: 4px;
+    background: #FF900E;
+    margin-bottom: 4vw;
+}
+.first-container{
+    background: rgba(255, 144, 14, 0.10);
+    width:100%;
+    text-align: center;
+    
+}
+
+.banner-title{
+ font-size:5vw; 
+ font-weight: 700;
+ padding-top: 9vh;
+}
+
+.banner-description{
+    color:#727272;
+    padding:0 9vh;
+    font-size:2vw;
+}
+
+.first-container img{
+    width:100%;
+}
