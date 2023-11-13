@@ -4,12 +4,47 @@
     font-family: 'Work Sans', sans-serif; ;
 }
 
+body{
+    margin:0 80px;
+    background: rgba(255, 144, 14, 0.10);
+}
 
+
+/* --------------
+    NAV SECTION
+   -------------- */
+header{
+    margin-top: 20px;
+   }
+.logo{
+    font-size:3vw;
+    font-weight: 700;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+
+}
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    gap:40px;
+
+}
+
+.menu-section{
+    font-size: 1.6vw;
+    color:#424242;
+    font-weight:500;
+}
 /* ------------------------
         FIRST CONTAINER
 --------------------------- */
 .btn{
-    padding: 1.8vw 1.5vw;
+    padding: 1.2vw 1.5vw;
     color:white;
     border: 0;
     border-radius: 4px;
@@ -17,24 +52,82 @@
     margin-bottom: 4vw;
 }
 .first-container{
-    background: rgba(255, 144, 14, 0.10);
+  
     width:100%;
     text-align: center;
     
 }
 
 .banner-title{
- font-size:5vw; 
+ font-size:4vw; 
  font-weight: 700;
  padding-top: 9vh;
 }
 
 .banner-description{
     color:#727272;
-    padding:0 9vh;
-    font-size:2vw;
+    padding:0 29vh;
+    font-size:1.5vw;
+   
 }
 
 .first-container img{
     width:100%;
+}
+
+
+
+/* ------------------------------------
+            second container
+---------------------------------------- */
+
+.second-container{
+    display: flex;
+
+
+}
+.img-container{
+
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+
+}
+
+
+/* ----------------------------------------------
+                MEDIA QURIES
+-------------------------------------------------- */
+/* mobile phone */
+@media (max-width:576px){
+    .first-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .menu{
+        display: none;
+       
+    }
+   .nav-bar{
+    justify-content: center;
+   }
+   
+   .logo{
+    margin-bottom: 14px;
+   }
+   .banner-description{
+    padding:0 12vw;
+   }
+   .banner-title{
+    margin-top:-70px;
+   }
+}
+
+
+/* tablet responsive */
+
+@media (min-width:577px) and (max-width:992px) {
+    .banner-description{
+        padding: 0px 14vh;
+    }
 }
