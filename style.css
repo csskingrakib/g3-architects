@@ -36,7 +36,7 @@ header{
 }
 
 .menu-section{
-    font-size: 1.6vw;
+    font-size: 1.2vw;
     color:#424242;
     font-weight:500;
 }
@@ -71,6 +71,10 @@ header{
    
 }
 
+.first-container{
+    display: flex;
+    flex-direction: column-reverse;
+}
 .first-container img{
     width:100%;
 }
@@ -80,6 +84,11 @@ header{
 /* ------------------------------------
             second container
 ---------------------------------------- */
+
+.text-container{
+    padding-top: 15vw;
+    padding-left: 4vw;
+}
 
 .second-container{
     display: flex;
@@ -93,14 +102,65 @@ header{
 
 }
 
+.img-container img{
+    width: 342px;
+    height: 342px;
+    padding:15px;
+}
 
+.text-title{
+    font-size: 2vw;
+    font-weight: 500;
+    color:#727272;
+}
+.text-description{
+    color:#727272;
+}
+
+.of-our{
+    color: black;
+    font-weight: 700;
+}
+.features{
+    color:#FF900E;
+    font-weight: 700;
+}
+
+
+/* ---------------------------------------
+        THIRD CONTAINER styles
+ ------------------------------------------ */
+
+ .third-container{
+    display: flex;
+ }
+
+ .third-title{
+    font-size:2.5vw;
+ }
+
+ .colorbox-child1{
+    width:11px;
+    height:70px;
+    background-color:red;
+    margin-top: 38px;
+ }
+ .colorbox-head{
+    display: flex;
+    gap:10px;
+  
+ }
+
+ .features-box{
+    width:3px;
+ }
 /* ----------------------------------------------
                 MEDIA QURIES
 -------------------------------------------------- */
 /* mobile phone */
 @media (max-width:576px){
     .first-container{
-        display: flex;
+        
         flex-direction: column-reverse;
     }
     
@@ -121,6 +181,22 @@ header{
    .banner-title{
     margin-top:-70px;
    }
+   .banner-title{
+    margin-top:4vh;
+   }
+
+   .second-container{
+    flex-direction:column;
+    }
+    
+   
+
+    .text-title{
+        font-size:5vw;
+    }
+    .img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 
@@ -129,5 +205,13 @@ header{
 @media (min-width:577px) and (max-width:992px) {
     .banner-description{
         padding: 0px 14vh;
+    }
+
+
+    .second-container{
+        flex-direction:column-reverse;
+    }
+    .text-title{
+        font-size:4vw;
     }
 }
